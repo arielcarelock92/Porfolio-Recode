@@ -1,108 +1,110 @@
 
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
 body {
-  font:15px/1.5 Helvetica, Arial;
-  padding:0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   margin:0;
-  background-color:grey;
-  
-  
-  
-  
-  .container { 
-    width:80%;
-    margin:auto;
-  overflow: hidden;
-  }
-  
-  
-  
-  
-  header {
-    min-height:70ox;
-    background:burlywood;
-    padding-top: 20px;
-    border-bottom:red 25px dotted;
-    text-decoration:none;
-    font-size:16px;
-  }
-  
-  header ul {
-    margin:0;
-    padding:0;
-  
-  }
-  header li {
-    float:left;
-    display:inline;
-  padding:0 20px 0 20px ;
-  text-transform: uppercase
+ }
+
+  header{
+  text-align: left;
+  margin:0;
+  padding:0;
+}
+
+nav {
   display: flex;
-  flex-wrap:wrap;
+  background-color: #070707;
+  
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  align-items:flex-end;;
+}
+
+header p{
+  text-align:center;
+  color:rgb(27, 228, 201);
+  font-size:48px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color:yellowgreen;
+  padding: 80px;
+  text-align: center;
+  border:dotted black 4px;
+
+}
+aside p{
+  display:flex;
+  justify-content:flex-end ;
+}
+
+aside h1{
+  font-size:30px;
+}
+section header{
+  color:yellowgreen;
+  font-size: large;
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+.pictures{
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.photo {
+ 
+  border-color:yellowgreen;
+  border-style:dotted solid dashed;
+  border-width: 3px;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.photo header {
+  padding: 20px;
+}
+
+.photo p {
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
   }
-  
-  header #name {
-    float:left;
-    font-style:italic;
-    font-family: 'Courier New', Courier, monospace;
-     
-  }
-   
-  header #name h1{
-    margin:0;
-  }
-  
-  header nav{
-    float:right;
-  display: inline;
-    font: size 14px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    color:yellowgreen;
-  
-  }
-  
-  h1 {font: size 18px;
-    }
-  
-  img {margin:4px;
-  }
-  
-  article p {
-    color:white;
-    font-family: sans-serif;
-  background-color: yellowgreen;
-  }
-  
-  
-  
-  #bio{
-    flex-direction:flex-end;
-  }
-  
-  #container{
-    height:70%;
-    border:solid black 4px;
-    margin:0 auto;
-    width: 1024px;
-  }
-  .flex-container {
-    display:flex;
-    flex-wrap: wrap;
-  }
-  
-  li {color:white;
-    font-size:24px
-  text-decoration none;
-  float:inline-end;
-  display:inline;
-  
-  }
-  
-  
-  footer{ 
-    border-style:dashed;
-    text-decoration-color:red;
-    boder:16px;
-  }
-  
-  footer p {
-    color:white;
+}
