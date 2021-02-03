@@ -9,10 +9,13 @@ body {
   margin:0;
  }
 
-  header{
+
+  header {
   text-align: left;
   margin:0;
   padding:0;
+  background-image:url("Images/black and white.jpg");
+
 }
 
 nav {
@@ -28,13 +31,18 @@ nav a {
   align-items:flex-end;;
 }
 
-header p{
+header p {
   text-align:center;
   color:rgb(27, 228, 201);
   font-size:48px;
   font-family: 'Times New Roman', Times, serif;
+  text-decoration: wavy;
 }
 
+header h1{
+  color:rgb(27, 228, 201);
+  text-decoration:yellowgreen underline ;
+ }
 
 main {
   display: flex;
@@ -61,13 +69,18 @@ section header{
   color:yellowgreen;
   font-size: large;
 }
+ ul{
+   list-style-type:none;
+   display:flex;
+   align-items:baseline;
+ }
 
 footer {
   flex-shrink: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: #0c0c0c;
+  color:rgb(27, 228, 201);
 }
 
 .pictures{
@@ -83,7 +96,7 @@ footer {
 .photo {
  
   border-color:yellowgreen;
-  border-style:dotted solid dashed;
+  border-style:dotted dashed;
   border-width: 3px;
   border-radius: 8px;
   padding: 10px;
